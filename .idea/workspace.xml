@@ -8,9 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0acb1e97-ea83-4b7e-b4bf-d480547da7b9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" />
+    </list>
+    <list id="4f55b84d-12c2-404f-ac37-8e2b122c3736" name="Failed commit: Default" comment="first commit">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
     </list>
     <ignored path="sandbox.iws" />
     <ignored path=".idea/workspace.xml" />
