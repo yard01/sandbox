@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0acb1e97-ea83-4b7e-b4bf-d480547da7b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/androidTest/java/easytest/catophot/ru/androidexamples/ExampleInstrumentedTest.java" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/java/easytest/catophot/ru/androidexamples/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/src/test/java/easytest/catophot/ru/androidexamples/ExampleUnitTest.java" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/misc.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" />
     </list>
     <ignored path="sandbox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +25,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
