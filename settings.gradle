@@ -1,1 +1,1 @@
-include ':androidexamples'
+include ':androidexamples', ':canvasexample'
