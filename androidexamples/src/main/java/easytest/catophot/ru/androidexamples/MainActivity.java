@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("DEBUG_TAG", "debug message");
         Log.v("VERBOSE_TAG", "verbose message");
-
+        Log.v("VERBOSE_TAG", "verbose message again");
     }
 }
