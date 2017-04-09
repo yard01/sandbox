@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file:///mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/androidexamples.iml" filepath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/androidexamples.iml" />
+      <module fileurl="file:///mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/canvasexample.iml" filepath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/canvasexample.iml" />
       <module fileurl="file:///mnt/wd/home/yard/AndroidStudioProjects/sandbox/sandbox.iml" filepath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/sandbox.iml" />
     </modules>
   </component>
