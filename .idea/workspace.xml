@@ -11,34 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0acb1e97-ea83-4b7e-b4bf-d480547da7b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_0_alpha7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_solver_1_0_0_alpha7.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/libraries/constraint_layout_1_0_0_alpha7.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/libraries/constraint_layout_solver_1_0_0_alpha7.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/java/com/github/yard01/canvastest/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/gradle.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/modules.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/androidexamples.iml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples/androidexamples.iml" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/canvasexample.iml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/canvasexample.iml" />
-      <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/AndroidManifest.xml" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" afterPath="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/gradlew.bat" />
     </list>
     <list id="4f55b84d-12c2-404f-ac37-8e2b122c3736" name="Failed commit: Default" comment="first commit">
@@ -3489,7 +3462,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="commit startandroid" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit startandroid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
