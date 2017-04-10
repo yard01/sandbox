@@ -5,13 +5,13 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$USER_HOME$/projects/android/android-studio/gradle/gradle-3.2" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../android-studio/gradle/gradle-3.2" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="/mnt/wd/home/yard/AndroidStudioProjects/sandbox" />
-            <option value="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/androidexamples" />
-            <option value="/mnt/wd/home/yard/AndroidStudioProjects/sandbox/canvasexample" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androidexamples" />
+            <option value="$PROJECT_DIR$/canvasexample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
