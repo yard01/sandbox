@@ -6,9 +6,9 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.os.Bundle;
+
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
 /**
  * Created by yard on 09.04.17.
  */
@@ -17,6 +17,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ///setContentView(R.layout.activity_list_item);
+
         setContentView(new DrawView(this));
     }
 
@@ -70,7 +72,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void run() {
-                Canvas canvas;/*
+                Canvas canvas;
                 while (running) {
                     canvas = null;
                     try {
@@ -83,7 +85,7 @@ public class MainActivity extends Activity {
                             surfaceHolder.unlockCanvasAndPost(canvas);
                         }
                     }
-                }*/
+                }
             }
         }
 
