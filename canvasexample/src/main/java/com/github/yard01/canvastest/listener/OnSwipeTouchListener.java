@@ -16,7 +16,9 @@ public class OnSwipeTouchListener implements View.OnTouchListener {
 
 
     public boolean onTouch(final View v, final MotionEvent event) {
+        Log.d("debug->", "TOUCH: " + event.getX() +", " + event.getY());
         return gestureDetector.onTouchEvent(event);
+
     }
 
     private final class GestureListener extends GestureDetector.SimpleOnGestureListener {
