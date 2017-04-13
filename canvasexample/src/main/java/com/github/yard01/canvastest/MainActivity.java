@@ -7,8 +7,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+
+import com.github.yard01.canvastest.listener.OnSwipeTouchListener;
+
 /**
  * Created by yard on 09.04.17.
  */
@@ -18,9 +24,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ///setContentView(R.layout.activity_list_item);
-
+        DrawView drawView = new DrawView(this);
         setContentView(new DrawView(this));
+
     }
+
+    private final class GestureListener extends GestureDetector.SimpleOnGestureListener {
+
+    }
+
 
     class DrawView extends SurfaceView implements SurfaceHolder.Callback {
 
@@ -29,6 +41,8 @@ public class MainActivity extends Activity {
         public DrawView(Context context) {
             super(context);
             getHolder().addCallback(this);
+            this.setOnTouchListener(new OnSwipeTouchListener());
+            //view.setOnt
         }
 
         @Override
@@ -77,9 +91,11 @@ public class MainActivity extends Activity {
                     canvas = null;
                     try {
                         canvas = surfaceHolder.lockCanvas(null);
+
                         if (canvas == null)
                             continue;
                         canvas.drawColor(Color.GREEN);
+
                     } finally {
                         if (canvas != null) {
                             surfaceHolder.unlockCanvasAndPost(canvas);
