@@ -68,13 +68,13 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
     public void flingField(final float velocityX, final  float velocityY) {
 
         Thread flingProcess = new Thread() {
-            boolean moveX = true;
-            boolean moveY = true;
+            //boolean moveX = true;
+            //boolean moveY = true;
 
-            float vX = velocityX;
+            float vX = velocityX ;
             float vY = velocityY;
-            float dvX = -Math.signum(vX) * DECELERATION ;
-            float dvY = -Math.signum(vY) * DECELERATION;
+            float dvX = -Math.signum(vX) * 50; //DECELERATION * USER_REFRESH_DELAY_SECOND;
+            float dvY = -Math.signum(vY) * 50; //DECELERATION * USER_REFRESH_DELAY_SECOND;
             public void run() {
                 isMove = true;
                 while (isMove) {
@@ -83,9 +83,10 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
                         fieldShift.X = fieldShift.X + vX;
                         fieldShift.Y = fieldShift.Y + vY;
 
-                        if (Math.abs(vX) > Math.abs(dvX)) vX = vX - dvX; else moveX = false;
-                        if (Math.abs(vY) > Math.abs(dvY)) vY = vY - dvY; else moveY = false;
-                        isMove = moveX & moveY;
+                        if (Math.abs(vX) > Math.abs(dvX)) vX = vX + dvX; else vX = 0;
+                        if (Math.abs(vY) > Math.abs(dvY)) vY = vY + dvY; else vY = 0;
+                        isMove = vX > 0 | vY > 0;
+                        Log.d("debug->", "" + vX + ", " + vY +"   :   " + dvX + ", " + dvY);
                         Thread.sleep(USER_REFRESH_DELAY);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
