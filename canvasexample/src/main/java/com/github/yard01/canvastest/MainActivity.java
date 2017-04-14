@@ -9,13 +9,11 @@ import android.graphics.Paint;
 import android.os.Bundle;
 
 import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
 
 import com.github.yard01.canvastest.listener.OnSwipeTouchListener;
-import com.github.yard01.com.github.yard01.gamename.gameplay.GamePlay;
+import com.github.yard01.gamename.gameplay.GamePlay;
 
 /**
  * Created by yard on 09.04.17.

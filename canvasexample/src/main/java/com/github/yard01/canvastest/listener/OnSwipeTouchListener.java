@@ -5,7 +5,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.github.yard01.com.github.yard01.gamename.gameplay.IGamePlay;
+import com.github.yard01.gamename.gameplay.IGamePlay;
 
 /**
  * Created by yard on 12.04.17.

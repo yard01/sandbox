@@ -1,4 +1,4 @@
-package com.github.yard01.com.github.yard01.gamename.gameplay;
+package com.github.yard01.gamename.gameplay;
 
 import android.view.View;
 
