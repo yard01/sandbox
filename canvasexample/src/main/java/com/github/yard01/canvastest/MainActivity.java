@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import android.view.GestureDetector;
@@ -21,15 +22,17 @@ import com.github.yard01.com.github.yard01.gamename.gameplay.GamePlay;
  */
 
 public class MainActivity extends Activity {
+    GamePlay gp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ///setContentView(R.layout.activity_list_item);
         DrawView drawView = new DrawView(this);
-        drawView.setOnTouchListener(new OnSwipeTouchListener());
         setContentView(drawView);
-        GamePlay gp = new GamePlay();
+        gp = new GamePlay();
         gp.init(drawView);
+        drawView.setOnTouchListener(new OnSwipeTouchListener(gp));
+
     }
 
     private final class GestureListener extends GestureDetector.SimpleOnGestureListener {
@@ -44,7 +47,7 @@ public class MainActivity extends Activity {
         public DrawView(Context context) {
             super(context);
             getHolder().addCallback(this);
-            this.setOnTouchListener(new OnSwipeTouchListener());
+            this.setOnTouchListener(new OnSwipeTouchListener(gp));
 
             //this.getDisplay().
             //view.setOnt
@@ -100,6 +103,8 @@ public class MainActivity extends Activity {
                         if (canvas == null)
                             continue;
                         canvas.drawColor(Color.GREEN);
+                        Paint paint = new Paint();
+                        canvas.drawText("Смещение:" + gp.getFieldShift().X + ", " + gp.getFieldShift().Y, 50,50, paint);
 
                     } finally {
                         if (canvas != null) {
