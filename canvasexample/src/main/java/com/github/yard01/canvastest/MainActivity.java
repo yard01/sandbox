@@ -14,6 +14,7 @@ import android.view.SurfaceView;
 import android.view.View;
 
 import com.github.yard01.canvastest.listener.OnSwipeTouchListener;
+import com.github.yard01.com.github.yard01.gamename.gameplay.GamePlay;
 
 /**
  * Created by yard on 09.04.17.
@@ -25,8 +26,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         ///setContentView(R.layout.activity_list_item);
         DrawView drawView = new DrawView(this);
-        setContentView(new DrawView(this));
-
+        drawView.setOnTouchListener(new OnSwipeTouchListener());
+        setContentView(drawView);
+        GamePlay gp = new GamePlay();
+        gp.init(drawView);
     }
 
     private final class GestureListener extends GestureDetector.SimpleOnGestureListener {
@@ -42,6 +45,8 @@ public class MainActivity extends Activity {
             super(context);
             getHolder().addCallback(this);
             this.setOnTouchListener(new OnSwipeTouchListener());
+
+            //this.getDisplay().
             //view.setOnt
         }
 
