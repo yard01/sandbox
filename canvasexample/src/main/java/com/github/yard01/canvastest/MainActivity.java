@@ -9,6 +9,9 @@ import android.os.Bundle;
 
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+
+import com.github.yard01.canvastest.listener.OnSwipeTouchListener;
+
 /**
  * Created by yard on 09.04.17.
  */
@@ -18,8 +21,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ///setContentView(R.layout.activity_list_item);
-
-        setContentView(new DrawView(this));
+        DrawView drawView = new DrawView(this);
+        drawView.setOnTouchListener(new OnSwipeTouchListener());
+        setContentView(drawView);
     }
 
     class DrawView extends SurfaceView implements SurfaceHolder.Callback {
