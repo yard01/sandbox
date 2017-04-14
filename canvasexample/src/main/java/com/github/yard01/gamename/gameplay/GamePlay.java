@@ -73,8 +73,8 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
 
             float vX = velocityX ;
             float vY = velocityY;
-            float dvX = -Math.signum(vX) * 50; //DECELERATION * USER_REFRESH_DELAY_SECOND;
-            float dvY = -Math.signum(vY) * 50; //DECELERATION * USER_REFRESH_DELAY_SECOND;
+            float dvX = -Math.signum(vX) * DECELERATION * USER_REFRESH_DELAY_SECOND;
+            float dvY = -Math.signum(vY) * DECELERATION * USER_REFRESH_DELAY_SECOND;
             public void run() {
                 isMove = true;
                 while (isMove) {
@@ -82,7 +82,23 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
                         //Log.d("debug->", "BAMS!!!" + vX + ", " + vY );
                         fieldShift.X = fieldShift.X + vX;
                         fieldShift.Y = fieldShift.Y + vY;
+                        if (fieldShift.X < 0 ) {
+                            vX = 0;
+                            fieldShift.X = 0;
+                        } else if (fieldShift.X > DEF_WIDTH) {
+                            vX = 0;
+                            fieldShift.X = DEF_WIDTH;
+                        }
 
+                        if (fieldShift.Y < 0 ) {
+                            vY = 0;
+                            fieldShift.Y = 0;
+                        } else if (fieldShift.Y > DEF_HEIGHT) {
+                            vY = 0;
+                            fieldShift.Y = DEF_HEIGHT;
+                        }
+
+                        //|| fieldShift.X > DEF_WIDTH) vX = 0;
                         if (Math.abs(vX) > Math.abs(dvX)) vX = vX + dvX; else vX = 0;
                         if (Math.abs(vY) > Math.abs(dvY)) vY = vY + dvY; else vY = 0;
                         isMove = vX > 0 | vY > 0;
