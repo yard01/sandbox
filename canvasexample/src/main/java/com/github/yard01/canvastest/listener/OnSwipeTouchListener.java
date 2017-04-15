@@ -26,6 +26,7 @@ public class OnSwipeTouchListener implements View.OnTouchListener {
     public boolean onTouch(final View v, final MotionEvent event) {
         //Log.d("debug->", "TOUCH: " + event.getX() +", " + event.getY());
         gamePlay.stopFling();
+
         return gestureDetector.onTouchEvent(event);
 
     }
@@ -40,14 +41,16 @@ public class OnSwipeTouchListener implements View.OnTouchListener {
 
         private static final int SWIPE_THRESHOLD = 10;
         private static final int SWIPE_VELOCITY_THRESHOLD = 10;
-        public static final int ACCELERATION = -1;
-        private int currentVelocutyX = 0;
-        private int currentVelocutyY = 0;
+        //public static final int ACCELERATION = -1;
+        //private int currentVelocutyX = 0;
+        //private int currentVelocutyY = 0;
 
         //Brake brake = new Brake();
 
         @Override
         public boolean onDown(MotionEvent e) {
+
+            Log.d("debug->", "down");
             return true;
         }
 
