@@ -11,4 +11,5 @@ public abstract class GamePlayDefaults {
     public static int USER_REFRESH_DELAY = 50; //msec
     public static float ONE_SECOND = 1000; //msec
     public static float USER_REFRESH_DELAY_SECOND = (float)USER_REFRESH_DELAY / ONE_SECOND;
+    public static int[][] cells = new int[66][40]; //size of a paper blank in cells
 }
