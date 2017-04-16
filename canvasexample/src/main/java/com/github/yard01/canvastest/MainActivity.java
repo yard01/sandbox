@@ -6,11 +6,15 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.os.Bundle;
 
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.GestureDetector;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+//import android.support.v4.app.Fragment;
 
 import com.github.yard01.canvastest.listener.OnSwipeTouchListener;
 import com.github.yard01.gamename.gameplay.GamePlay;
@@ -30,6 +34,31 @@ public class MainActivity extends Activity {
         gp = new GamePlay();
         gp.init(drawView);
         drawView.setOnTouchListener(new OnSwipeTouchListener(gp));
+        calculateMetrics();
+    }
+
+    private void calculateMetrics() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+
+        //display.getRectSize(size);
+        //display.getRealSize(size);
+
+//        //display.getSize(size); //getSize(size);
+  //      int width = size.x;
+    //    int height = size.y;
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        display.getMetrics(outMetrics);
+        int width = outMetrics.widthPixels;
+        int height = outMetrics.heightPixels;
+        //float density = getResources().getDisplayMetrics().density;
+        float density = outMetrics.density;
+
+        float dpHeight = outMetrics.heightPixels / density;
+        float dpWidth = outMetrics.widthPixels / density;
+
+        float inHeight = Math.round(outMetrics.heightPixels / outMetrics.ydpi);
+        float inWidth =  Math.round(outMetrics.widthPixels / outMetrics.xdpi);
 
     }
 

@@ -31,6 +31,9 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
         }
     }
 */
+    public GamePlay() {
+
+    }
 
     @Override
     public void setFieldShift(XY xy) {
@@ -141,4 +144,6 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
         fieldShift.Y += y - downY;
 
     }
+
+
 }
