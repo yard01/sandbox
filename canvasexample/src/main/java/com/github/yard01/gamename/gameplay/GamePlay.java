@@ -14,6 +14,8 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
 
     private volatile XY fieldShift = new XY();
     private volatile XY fieldSize = new XY(2000, 2000);
+    private volatile float currentScale;
+    private volatile float downX, downY;
 
     private View currentView;
 
@@ -57,6 +59,16 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
     }
 
     @Override
+    public float getScale() {
+        return 0;
+    }
+
+    @Override
+    public void setScale(float scale) {
+        currentScale = scale;
+    }
+
+    @Override
     public void init(View view) {
         currentView = view;
         Log.d("debug->", view.toString());
@@ -68,8 +80,6 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
     public void flingField(final float velocityX, final  float velocityY) {
 
         Thread flingProcess = new Thread() {
-            //boolean moveX = true;
-            //boolean moveY = true;
 
             float vX = velocityX ;
             float vY = velocityY;
@@ -88,7 +98,8 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
                         } else if (fieldShift.X > DEF_WIDTH) {
                             vX = 0;
                             fieldShift.X = DEF_WIDTH;
-                        }
+                        } else if (Math.abs(vX) > Math.abs(dvX)) vX = vX + dvX; else vX = 0;
+
 
                         if (fieldShift.Y < 0 ) {
                             vY = 0;
@@ -96,12 +107,10 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
                         } else if (fieldShift.Y > DEF_HEIGHT) {
                             vY = 0;
                             fieldShift.Y = DEF_HEIGHT;
-                        }
+                        } else if (Math.abs(vY) > Math.abs(dvY)) vY = vY + dvY; else vY = 0;
 
-                        //|| fieldShift.X > DEF_WIDTH) vX = 0;
-                        if (Math.abs(vX) > Math.abs(dvX)) vX = vX + dvX; else vX = 0;
-                        if (Math.abs(vY) > Math.abs(dvY)) vY = vY + dvY; else vY = 0;
                         isMove = vX > 0 | vY > 0;
+
                         Log.d("debug->", "" + vX + ", " + vY +"   :   " + dvX + ", " + dvY);
                         Thread.sleep(USER_REFRESH_DELAY);
                     } catch (InterruptedException e) {
@@ -117,5 +126,19 @@ public class GamePlay extends GamePlayDefaults implements IGamePlay {
     @Override
     public void stopFling() {
         isMove = false;
+    }
+
+    @Override
+    public void setTouchDown(float x, float y) {
+        this.downX = x;
+        this.downY = y;
+        stopFling();
+    }
+
+    @Override
+    public void touchWorking(float x, float y) {
+        fieldShift.X += x - downX;
+        fieldShift.Y += y - downY;
+
     }
 }
