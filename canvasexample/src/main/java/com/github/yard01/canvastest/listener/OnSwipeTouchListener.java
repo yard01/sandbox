@@ -18,14 +18,17 @@ public class OnSwipeTouchListener implements View.OnTouchListener {
 
     IGamePlay gamePlay;
 
+
     public OnSwipeTouchListener(IGamePlay gamePlay) {
         super();
         this.gamePlay = gamePlay;
     }
 
     public boolean onTouch(final View v, final MotionEvent event) {
+
         //Log.d("debug->", "TOUCH: " + event.getX() +", " + event.getY());
-        gamePlay.stopFling();
+        gamePlay.touchWorking(event.getX(),event.getY());
+
         return gestureDetector.onTouchEvent(event);
 
     }
@@ -39,15 +42,14 @@ public class OnSwipeTouchListener implements View.OnTouchListener {
 
 
         private static final int SWIPE_THRESHOLD = 10;
-        private static final int SWIPE_VELOCITY_THRESHOLD = 10;
-        public static final int ACCELERATION = -1;
-        private int currentVelocutyX = 0;
-        private int currentVelocutyY = 0;
-
-        //Brake brake = new Brake();
+        private static final int SWIPE_VELOCITY_THRESHOLD = 100;
 
         @Override
         public boolean onDown(MotionEvent e) {
+
+            Log.d("debug->", "down:" + e.getX() +", " + e.getY());
+            gamePlay.setTouchDown(e.getX(),e.getY());
+
             return true;
         }
 
@@ -66,20 +68,22 @@ public class OnSwipeTouchListener implements View.OnTouchListener {
                 gamePlay.stopFling();
                 float diffY = e2.getY() - e1.getY();
                 float diffX = e2.getX() - e1.getX();
-                if (Math.abs(diffX) > Math.abs(diffY)) {
-                    if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
 
-                        Log.d("debug->", "velocityX:" + velocityX);
+                //if (Math.abs(diffX) > Math.abs(diffY))
+                {
+                    if ((Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD)
+                     || (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD)){
+                        //Log.d("debug->", "velocityX:" + velocityX);
                         gamePlay.flingField(velocityX, velocityY);
-                        if (diffX > 0) {
-                            onSwipeRight();
-                        } else {
-                            onSwipeLeft();
-                        }
+                        //if (diffX > 0) {
+                        //    onSwipeRight();
+                        //} else {
+                        //    onSwipeLeft();
+                        //}
                     }
-                } else {
+                } //else {
                     // onTouch(e);
-                }
+                //}
             } catch (Exception exception) {
                 exception.printStackTrace();
             }

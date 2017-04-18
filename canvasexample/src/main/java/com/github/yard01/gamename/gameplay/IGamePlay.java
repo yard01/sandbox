@@ -15,7 +15,11 @@ public interface IGamePlay {
     public void setYFieldShift(float y);
     public XY getGameFieldSize();
     public XY getFieldShift();
+    public float getScale();
+    public void  setScale(float scale);
     public void init(View view);
     public void flingField(final float velocityX, final  float velocityY);
     public void stopFling();
+    public void setTouchDown(float x, float y);
+    public void touchWorking(float x, float y);
 }
