@@ -3,6 +3,7 @@ package com.github.yard01.canvastest;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -10,12 +11,12 @@ import android.graphics.Point;
 import android.os.Bundle;
 
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.GestureDetector;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 //import android.support.v4.app.Fragment;
-
 import com.github.yard01.canvastest.listener.OnSwipeTouchListener;
 import com.github.yard01.gamename.gameplay.GamePlay;
 
@@ -39,26 +40,26 @@ public class MainActivity extends Activity {
 
     private void calculateMetrics() {
         Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-
-        //display.getRectSize(size);
-        //display.getRealSize(size);
-
-//        //display.getSize(size); //getSize(size);
-  //      int width = size.x;
-    //    int height = size.y;
         DisplayMetrics outMetrics = new DisplayMetrics();
         display.getMetrics(outMetrics);
         int width = outMetrics.widthPixels;
         int height = outMetrics.heightPixels;
-        //float density = getResources().getDisplayMetrics().density;
+
         float density = outMetrics.density;
 
-        float dpHeight = outMetrics.heightPixels / density;
-        float dpWidth = outMetrics.widthPixels / density;
+        float dpHeight = outMetrics.heightPixels / density; //dp
+        float dpWidth = outMetrics.widthPixels / density; //dp
 
-        float inHeight = Math.round(outMetrics.heightPixels / outMetrics.ydpi);
-        float inWidth =  Math.round(outMetrics.widthPixels / outMetrics.xdpi);
+        float inHeight = Math.round(outMetrics.heightPixels / outMetrics.ydpi); //inch
+        float inWidth =  Math.round(outMetrics.widthPixels / outMetrics.xdpi); //inch
+
+        float mmHeight = inHeight * (float)24.5; //Math.round(outMetrics.heightPixels / outMetrics.ydpi); //inch
+        float mmWidth =  inWidth * (float)24.5; //Math.round(outMetrics.widthPixels / outMetrics.xdpi); //inch
+
+        float px1mmHeight = height / mmHeight;
+        float px1mmWidth = width / mmWidth;
+
+        Log.d("debug->", px1mmWidth + ", " +px1mmHeight);
 
     }
 
@@ -74,7 +75,7 @@ public class MainActivity extends Activity {
         public DrawView(Context context) {
             super(context);
             getHolder().addCallback(this);
-            this.setOnTouchListener(new OnSwipeTouchListener(gp));
+            //this.setOnTouchListener(new OnSwipeTouchListener(gp));
 
             //this.getDisplay().
             //view.setOnt
@@ -125,13 +126,17 @@ public class MainActivity extends Activity {
                 while (running) {
                     canvas = null;
                     try {
+                        //Bitmap b = new Bitmap();
+
                         canvas = surfaceHolder.lockCanvas(null);
 
                         if (canvas == null)
                             continue;
+                        //canvas.drawRGB();
                         canvas.drawColor(Color.GREEN);
                         Paint paint = new Paint();
                         canvas.drawText("Смещение:" + gp.getFieldShift().X + ", " + gp.getFieldShift().Y, 50,50, paint);
+                        canvas.drawText("Скорость:" + gp.getFieldVelocity().X + ", " + gp.getFieldVelocity().Y, 50,100, paint);
 
                     } finally {
                         if (canvas != null) {
