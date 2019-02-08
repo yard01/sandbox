@@ -3,13 +3,13 @@
  */
 import org.junit.Test;
 
-import com.github.yard01.rx.introduction.ExampleLauncher;
+import com.github.yard01.rx.introduction.IntroLauncher;
 
 import static org.junit.Assert.*;
 
 public class LibraryTest {
     @Test public void testSomeLibraryMethod() {
-        ExampleLauncher classUnderTest = new ExampleLauncher();
+        IntroLauncher classUnderTest = new IntroLauncher();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
 }
