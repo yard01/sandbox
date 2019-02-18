@@ -48,11 +48,11 @@ public class TwoThreads {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("---I NO PARALLEL---------");
+		System.out.println("---I. NO PARALLEL---------");
 		noParallel();
 		System.out.println("-------------------------");
 
-		System.out.println("------II PARALLEL--------");
+		System.out.println("------II. PARALLEL--------");
 		parallel();
 		System.out.println("-------------------------");
 

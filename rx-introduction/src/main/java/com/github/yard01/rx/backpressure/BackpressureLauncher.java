@@ -17,7 +17,8 @@ public class BackpressureLauncher {
 	}
 	
 	public static void flowable() {
-		Flowable.range(1, 999_999_999).map(MyItem::new).observeOn(Schedulers.io()).subscribe(myItem -> {
+		Flowable.range(1, 999_999_999)
+		.map(MyItem::new).observeOn(Schedulers.io()).subscribe(myItem -> {
 			sleep(50);
 			System.out.println("Received MyItem " + myItem.id);
 		});

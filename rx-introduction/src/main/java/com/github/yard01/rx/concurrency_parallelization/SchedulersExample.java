@@ -49,7 +49,7 @@ public class SchedulersExample {
 			  	System.out.println("the first thread: " + Thread.currentThread().getName());
 			  });
 		//задержка, превый поток (время работы - 1 с.) ////////////////////
-		sleep(2000); //успевает завершиться до запуска второго
+		sleep(1500); //успевает завершиться до запуска второго
 		///////////////////////////////////////////////////////////////////
 		
 		// если мы запускаем новый поток, дождавшись завершения первого, то  
@@ -60,6 +60,7 @@ public class SchedulersExample {
 		  .subscribe(i -> {
 			  	System.out.println("the second thread: " + Thread.currentThread().getName());
 			  });
+		sleep(3000);
 
 	}
 	
@@ -126,6 +127,7 @@ public class SchedulersExample {
 		// и только после их завершения запустится следующая порция ожидающих потоков
 		// Причем, потоки используются ПОВТОРНО
 		System.out.println("Available processors:" + Runtime.getRuntime().availableProcessors());
+		
 		Observable.just("computation1") //помещает поток в неограниченную очередь,
 		  .subscribeOn(Schedulers.computation()) //запускает при освобождении процессора
 		  .subscribe(i -> {
@@ -187,12 +189,66 @@ public class SchedulersExample {
 		
 	}
 
+	public static void schedulersImmediate() {
+		//Не представлен в RX Java 2.0
+	}
+
+	public static void schedulersTrampoline() {
+		//в RX Java 2.0 вместо Schedulers.immediate()
+		// рекомендуется использовать Schedulers.trampoline()
+		// Блокирует выполнение всех последующих потоков,
+		// до тех пор, пока не завершится текущий
+		// Т.е. выполнение идёт синхронно
+		tmp = "";
+		Observable.just(2, 4, 6, 8)
+		  .subscribeOn(Schedulers.trampoline())
+		  .subscribe(i -> tmp += "" + i);
+		
+		Observable.just(1, 3, 5, 7, 9)
+		  .subscribeOn(Schedulers.trampoline())
+		  .subscribe(i -> tmp += "" + i);
+		
+		sleep(500);
+		
+		System.out.println(tmp);
+	    //Результат: 246813579
+		
+		tmp = "";
+		
+		Scheduler scheduler = Schedulers.trampoline();
+
+		Scheduler.Worker worker = scheduler.createWorker();
+		
+		worker.schedule(() -> { 
+			tmp  += Thread.currentThread().getName() + "Start";
+		    worker.schedule(() -> {
+		    	tmp += "_middleStart";
+		        worker.schedule(() ->
+		        	tmp  += "_worker_"
+		        );
+		        tmp  += "_middleEnd";
+		    });
+		    tmp += "_mainEnd";
+		});
+		
+		sleep(500);
+
+		System.out.println(tmp);
+		
+		//Результат: mainStart_mainEnd_middleStart_middleEnd_worker_
+		//где main - имя потока
+		
+	}
+
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//schedulerWorker();
 		//schedulersComputation();
-		schedulersNewThread();
+		//schedulersNewThread();
+		//schedulersIO();
+		//schedulersTrampoline();
+		
 	}
 
 }
