@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Layouts</string>
+    <string name="tab_text_2">Animation</string>
+    <string name="tab_text_3">Dialogs</string>
+    <string name="tab_text_4">Controls</string>
+    <string name="tab_text_5">Behavior</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="controls_tab0">Anything</string>
+    <string name="controls_tab1">Chips</string>
+    <string name="dialogs_tab0">Alerts</string>
+    <string name="dialogs_tab1">FragmentDialog</string>
+    <string name="listsntree_page0">List</string>
+    <string name="listsntree_page1">Tree</string>
+    <string name="listsntree_page2">Grid</string>
+
+    <string name="title_recycler_activity">MainActivity</string>
+    <string name="title_activity_uicrib_theme_demo">Theme Demo</string>
+    <string name="ui_crib_winter">Winter</string>
+    <string name="ui_crib_summer">Summer</string>
+    <string name="ui_crib_spring">Spring</string>
+    <string name="ui_crib_autumn">Autumn</string>
+    <string name="ui_crib_default">Default</string>
+
+    <string-array name="lists_and_trees_writers">
+        <item>A. Pushkin</item>
+        <item>M. Lermontov</item>
+        <item>F. Dostoevsky</item>
+        <item>L. Tolstoy</item>
+        <item>I. Turgenev</item>
+        <item>N. Gogol</item>
+    </string-array>
+
+    <array name="ar">
+    <item>
+
+    </item>
+</array>
+</resources>

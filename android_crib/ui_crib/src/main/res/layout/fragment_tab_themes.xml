@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/title_activity_uicrib_theme_demo" />
+
+    <Button
+        android:id="@+id/ui_crib_themes_btn_winter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_crib_winter" />
+
+    <Button
+        android:id="@+id/ui_crib_themes_btn_spring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_crib_spring" />
+
+    <Button
+        android:id="@+id/ui_crib_themes_btn_summer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_crib_summer" />
+
+    <Button
+        android:id="@+id/ui_crib_themes_btn_autumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_crib_autumn" />
+
+    <Button
+        android:id="@+id/ui_crib_themes_btn_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_crib_default" />
+</LinearLayout>

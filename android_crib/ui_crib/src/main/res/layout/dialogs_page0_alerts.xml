@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/dialogs_alerts_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One button only" />
+
+    <Button
+        android:id="@+id/dialogs_alerts_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two Buttons: Yes and No" />
+
+    <Button
+        android:id="@+id/dialogs_alerts_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Three Buttons: Cancel, Yes and No" />
+</LinearLayout>

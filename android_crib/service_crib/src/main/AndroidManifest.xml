@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.service_crib">
+
+    <application>
+        <!-- Нужны права на живые обои: android:permission="android.permission.BIND_WALLPAPER" -->
+        <service
+            android:name="com.github.yard01.sandbox.crib.service_crib.wallpaper.ServiceCribWallpaper"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_WALLPAPER"
+            >
+            <!--говорим, что этот сервис управляет живыми обоями -->
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/service_crib_wallpaper" >
+            </meta-data>
+        </service>
+
+        <activity android:name="com.github.yard01.sandbox.crib.service_crib.wallpaper.SettingsWallpaperActivity"
+            android:exported="true">
+        </activity>
+
+
+        <!-- Этот сервис будет запущен в отдельном процессе :service_crib_simpleservice_otherprocess -->
+        <service
+            android:name="com.github.yard01.sandbox.crib.service_crib.simpleservice.SimpleServiceCribOtherProcess"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":service_crib_simpleservice_otherprocess" /> <!-- android:process=":service_crib_simpleservice_process" - чтобы сервис запускался в другом процессе, отличном от процесса приложения -->
+        <!-- Это сервис запускается в том же процессе, что и приложение -->
+        <service
+            android:name="com.github.yard01.sandbox.crib.service_crib.simpleservice.SimpleServiceCrib"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+    <uses-feature
+        android:name="android.software.live_wallpaper"
+        android:required="true" >
+    </uses-feature>
+</manifest>

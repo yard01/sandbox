@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/dwh_crib_sql_btn_createdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Database" />
+
+    <Button
+        android:id="@+id/dwh_crib_sql_btn_createstructuredb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create the Structure of Book DataBase" />
+
+    <Button
+        android:id="@+id/dwh_crib_sql_btn_filldb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill database" />
+
+    <Button
+        android:id="@+id/dwh_crib_sql_btn_droptables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drop Tables" />
+
+    <Button
+        android:id="@+id/dwh_crib_sql_btn_dropdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drop Database" />
+
+    <Button
+        android:id="@+id/dwh_crib_sql_btn_opendb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open SQL Editor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dwh_crib_sql_btn_dbinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

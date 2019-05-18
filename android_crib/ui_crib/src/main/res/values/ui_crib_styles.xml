@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="UI_Crib_CommonAppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ui_crib_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ui_crib_colorPrimaryDark</item>
+        <item name="colorAccent">@color/ui_crib_colorAccent</item>
+        <item name="colorOnSecondary">@color/ui_crib_colorOnSecondary</item>
+    </style>
+
+    <style name="UI_Crib_CommonAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="UI_Crib_CommonAppTheme.YesActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+    </style>
+
+    <style name="UI_Crib_CommonAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="UI_Crib_CommonAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="UI_Crib_CommonAppThemeWinter" parent="UI_Crib_CommonAppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ui_crib_colorPrimaryWinter</item>
+        <item name="colorPrimaryDark">@color/ui_crib_colorPrimaryDarkWinter</item>
+        <item name="colorAccent">@color/ui_crib_colorAccentWinter</item>
+        <item name="colorSecondary">@color/ui_crib_colorSecondaryWinter</item>
+        <item name="colorOnSecondary">@color/ui_crib_colorOnSecondaryWinter</item>
+
+    </style>
+
+    <style name="UI_Crib_CommonAppThemeSummer" parent="UI_Crib_CommonAppTheme.YesActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ui_crib_colorPrimarySummer</item>
+        <item name="colorPrimaryDark">@color/ui_crib_colorPrimaryDarkSummer</item>
+        <item name="colorAccent">@color/ui_crib_colorAccentSummer</item>
+        <item name="colorSecondary">@color/ui_crib_colorSecondarySummer</item>
+        <item name="colorOnSecondary">@color/ui_crib_colorOnSecondarySummer</item>
+    </style>
+
+    <style name="UI_Crib_CommonAppThemeSpring" parent="UI_Crib_CommonAppTheme.YesActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ui_crib_colorPrimarySpring</item>
+        <item name="colorPrimaryDark">@color/ui_crib_colorPrimaryDarkSpring</item>
+        <item name="colorAccent">@color/ui_crib_colorAccentSpring</item>
+        <item name="colorSecondary">@color/ui_crib_colorSecondarySpring</item>
+        <item name="colorOnSecondary">@color/ui_crib_colorOnSecondarySpring</item>
+
+    </style>
+
+    <style name="UI_Crib_CommonAppThemeAutumn" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ui_crib_colorPrimaryAutumn</item>
+        <item name="colorPrimaryDark">@color/ui_crib_colorPrimaryDarkAutumn</item>
+        <item name="colorAccent">@color/ui_crib_colorAccentAutumn</item>
+        <item name="colorSecondary">@color/ui_crib_colorSecondaryAutumn</item>
+        <item name="colorOnSecondary">@color/ui_crib_colorOnSecondaryAutumn</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

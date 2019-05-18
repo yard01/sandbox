@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ui_crib_colorPrimary">#008577</color>
+    <color name="ui_crib_colorPrimaryDark">#00574B</color>
+    <color name="ui_crib_colorAccent">#D8241B</color>
+    <color name="ui_crib_colorOnSecondary">#FFFFFF</color>
+
+    <color name="ui_crib_colorPrimaryWinter">#0155CA</color>
+    <color name="ui_crib_colorPrimaryDarkWinter">#003657</color>
+    <color name="ui_crib_colorAccentWinter">#DF3788</color>
+    <color name="ui_crib_colorSecondaryWinter">#29CDFF</color>
+    <color name="ui_crib_colorOnSecondaryWinter">#FFFFFF</color>
+
+    <color name="ui_crib_colorPrimarySummer">#59BE56</color>
+    <color name="ui_crib_colorPrimaryDarkSummer">#43883B</color>
+    <color name="ui_crib_colorAccentSummer">#A50606</color>
+    <color name="ui_crib_colorSecondarySummer">#B81D27</color>
+    <color name="ui_crib_colorOnSecondarySummer">#FFFFFF</color>
+
+
+    <color name="ui_crib_colorPrimarySpring">#ADF309</color>
+    <color name="ui_crib_colorPrimaryDarkSpring">#6E8103</color>
+    <color name="ui_crib_colorAccentSpring">#7AE7D5</color>
+    <color name="ui_crib_colorSecondarySpring">#0A752F</color>
+    <color name="ui_crib_colorOnSecondarySpring">#FFFFFF</color>
+
+    <color name="ui_crib_colorPrimaryAutumn">#F8F117</color>
+    <color name="ui_crib_colorPrimaryDarkAutumn">#815D03</color>
+    <color name="ui_crib_colorAccentAutumn">#E77A7A</color>
+    <color name="ui_crib_colorSecondaryAutumn">#D17606</color>
+    <color name="ui_crib_colorOnSecondaryAutumn">#FFFFFF</color>
+
+
+</resources>

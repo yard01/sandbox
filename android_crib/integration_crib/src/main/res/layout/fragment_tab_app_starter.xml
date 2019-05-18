@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/integration_crib_app_starter_btn_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start  e-mail" />
+
+    <Button
+        android:id="@+id/integration_crib_app_starter_btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start gallery" />
+
+    <Button
+        android:id="@+id/integration_crib_app_starter_btn_browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Browser" />
+
+    <Button
+        android:id="@+id/integration_crib_app_starter_btn_associate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PNG Association Test" />
+</LinearLayout>
