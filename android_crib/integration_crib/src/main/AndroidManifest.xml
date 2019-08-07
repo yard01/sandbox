@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.integration_crib">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity android:name="com.github.yard01.sandbox.crib.integration_crib.file_association.PngFileViewerDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:scheme="file"/>
+                <data android:pathPattern=".*\\.png"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.github.yard01.sandbox.crib.integration_crib.tasks.TaskDemoActivity4" />
+        <activity android:name="com.github.yard01.sandbox.crib.integration_crib.tasks.TaskDemoActivity3" />
+        <activity android:name="com.github.yard01.sandbox.crib.integration_crib.tasks.TaskDemoActivity2" />
+        <activity android:name="com.github.yard01.sandbox.crib.integration_crib.tasks.TaskDemoActivity1" />
+
+        <provider
+            android:name="com.github.yard01.sandbox.crib.integration_crib.content_provider.SimpleBookDBContentProvider"
+            android:authorities="com.github.yard01.sandbox.crib.providers.SimpleBookDB" />
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/service_btn_start_simplesrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/service_btn_stop_simplesrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Service" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/service_btn_stopid_simplesrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop by ID" />
+
+        <EditText
+            android:id="@+id/service_et_id_simplesrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <Button
+        android:id="@+id/service_btn_bind_simplesrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IBind example" />
+
+    <Button
+        android:id="@+id/service_btn_startconnect_simplesrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Connect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/service_btn_incint_simplesrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Increment Interval" />
+
+        <Button
+            android:id="@+id/service_btn_decint_simplesrv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Decrement Interval" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/service_btn_hello_simplesrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Hello to Other Process" />
+
+    <Button
+        android:id="@+id/service_btn_stopconnect_simplesrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Connect" />
+
+</LinearLayout>

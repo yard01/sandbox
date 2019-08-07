@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Layouts</string>
+    <string name="tab_text_2">Animation</string>
+    <string name="tab_text_3">Dialogs</string>
+    <string name="tab_text_4">Controls</string>
+    <string name="tab_text_5">Behavior</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="controls_tab0">Anything</string>
+    <string name="controls_tab1">Chips</string>
+    <string name="dialogs_tab0">Alerts</string>
+    <string name="dialogs_tab1">FragmentDialog</string>
+    <string name="listsntree_page0">Список</string>
+    <string name="listsntree_page1">Дерево</string>
+    <string name="listsntree_page2">Сетка</string>
+
+    <string name="title_recycler_activity">MainActivity</string>
+    <string name="title_activity_uicrib_theme_demo">Пример установки темы</string>
+    <string name="ui_crib_winter">Зима</string>
+    <string name="ui_crib_summer">Лето</string>
+    <string name="ui_crib_spring">Весна</string>
+    <string name="ui_crib_autumn">Осень</string>
+    <string name="ui_crib_default">По умолчанию</string>
+
+    <string-array name="lists_and_trees_writers">
+        <item>А. Пушкин</item>
+        <item>М. Лермонтов</item>
+        <item>Ф. Достоевский</item>
+        <item>Л. Толстой</item>
+        <item>И. Тургенев</item>
+        <item>Н. Гоголь</item>
+    </string-array>
+</resources>

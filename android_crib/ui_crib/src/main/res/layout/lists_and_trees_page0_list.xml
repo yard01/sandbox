@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    android:background="?android:attr/activatedBackgroundIndicator"-->
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    >
+
+    <ListView
+        android:id="@+id/lists_and_trees_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        android:listSelector="@drawable/lists_and_trees_listitem_selector"
+        />
+</RelativeLayout >

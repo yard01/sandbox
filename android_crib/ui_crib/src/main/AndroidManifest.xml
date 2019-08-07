@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ui_crib">
+
+    <application>
+        <activity
+            android:name="com.github.yard01.sandbox.crib.ui_crib.themes.UICribThemeDemoActivity"
+            android:label="@string/title_activity_uicrib_theme_demo"
+            android:theme="@style/UI_Crib_CommonAppTheme.YesActionBar">
+        </activity>
+
+        <activity
+            android:name="com.github.yard01.sandbox.crib.ui_crib.coordinatorlayout.RecyclerViewActivity"
+            android:label="@string/title_recycler_activity"
+            android:theme="@style/UI_Crib_CommonAppTheme.NoActionBar" />
+
+        <activity android:name=".EmptyActivity" />
+    </application>
+
+</manifest>

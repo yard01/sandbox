@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">dwh_crib</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="files_tab0">Internal</string>
+    <string name="files_tab1">External</string>
+    <string name="files_tab2">USB</string>
+
+</resources>
