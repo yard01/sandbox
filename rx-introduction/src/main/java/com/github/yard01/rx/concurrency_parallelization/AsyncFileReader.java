@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.Enumeration;
 
 import io.reactivex.Flowable;
 import io.reactivex.Observable;
@@ -16,7 +18,7 @@ public class AsyncFileReader {
 		BufferedReader br = new BufferedReader(
 									new InputStreamReader(AsyncFileReader.class.getClassLoader().getResourceAsStream("pushkin.txt")
 											)
-									);			
+									);	
 		Observable.fromIterable(br.lines()::iterator)
 					 .observeOn(Schedulers.io()) // читаем строки в потоке
 		             .subscribe(AsyncFileReader::viewData  // и отдаем их на "Устройство Вывода viewData"      			
@@ -24,7 +26,7 @@ public class AsyncFileReader {
 	}
 
 	public static void readFlowable() {		
-
+				
 		BufferedReader br = new BufferedReader(
 									new InputStreamReader(AsyncFileReader.class.getClassLoader().getResourceAsStream("pushkin.txt")
 											)

@@ -1,9 +1,12 @@
 package com.github.yard01.rx.concurrency_parallelization;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 public class SchedulersExample {
@@ -246,8 +249,17 @@ public class SchedulersExample {
 		//schedulerWorker();
 		//schedulersComputation();
 		//schedulersNewThread();
-		//schedulersIO();
+		schedulersIO();
 		//schedulersTrampoline();
+		//Disposable disposable = 
+		// Observable.interval(1000,TimeUnit.MILLISECONDS).subscribeOn(Schedulers.io())
+		//.subscribe(s->System.out.println(Thread.currentThread().getName()));
+		
+		//sleep(5000);
+		
+		//disposable.dispose();
+		
+		sleep(5000);
 		
 	}
 

@@ -9,7 +9,7 @@ public class EasyObserver<T> implements Observer<T> {
 	@Override
 	public void onSubscribe(Disposable d) {
 		// TODO Auto-generated method stub
-		System.out.println("onSubscribe(): EasyObserver was subscribed");
+		System.out.println("onSubscribe(): EasyObserver was subscribed " + d.toString());
 		
 	}
 
@@ -30,7 +30,6 @@ public class EasyObserver<T> implements Observer<T> {
 	public void onComplete() {
 		// TODO Auto-generated method stub
 		System.out.println("onComplete(): complete");
-
 	}
 
 }

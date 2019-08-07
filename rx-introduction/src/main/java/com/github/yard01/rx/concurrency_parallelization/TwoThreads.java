@@ -13,7 +13,7 @@ public class TwoThreads {
 				.subscribe(System.out::println);
 		
 		Observable.range(1,6) // поток цифр от 1 до 6
-				.map(s -> intenseCalculation((s))) // произвольная задержка от 0 до 3-х с
+				.map(s -> intenseCalculation((s))) // произвольная задержка от 0 до 3-х с				
 				.subscribe(System.out::println);
 	}
 	
